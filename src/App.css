@@ -1,38 +1,164 @@
 .App {
   text-align: center;
+  background-color: white;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 750px) {
+  .about_par > p{
+    margin: 2vw;
+    font-size: 3vw;
   }
+  .about_par > img{
+    width: 90vw;
+  }
+  .about_par{
+    align-items: center;
+    margin-top: 10vh;
+    margin: 5vw;
+  }
+  .App_Canvas {
+    flex-direction:column ;
+    
+  }
+  .Main_Canvas_bar > canvas{
+    height: 40vh !important;
+    width:  100vw !important;
+  }
+  .Main_Canvas > canvas  {
+    background-color: black;
+    border: solid;
+  border-color: lightgrey;
+  border-width: 3px;
+  width: 80vw !important;
+  height: 80vw !important;
+  margin-left: 8vw;
+  }
+  .Main_Canvas_btn{
+    margin-top: 3vh;;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .Main_Canvas_btn > button, .Main_Canvas_btn_clr > button{
+    font-size: 1.7vh;
+    background-color: lightgrey;
+    color: white;
+    height: 4vh;
+    width: 30vw;
+    border: none;
+    border-radius: 7px;
+    margin-left: 0vw;
+    margin-right: 1vw;
+  
+  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App_Canvas {
+display: flex;
+border: none;
+margin-bottom: 0px;
+
+
+}
+.Main_Canvas{
+margin: 1vw;
+display: flex;
+flex-direction: column;
+}
+
+.App_About > h2{
+  color: grey;
+  font-size: 4vh;
+  margin-top: 0rem;
+  padding: 0px
+
+}
+
+
+.Main_Canvas_btn > button:hover, .Main_Canvas_btn_clr > button:hover{
+  background-color: white ;
+  color: lightgrey;
+  border: solid;
+  border-color: lightgrey;
+  cursor: pointer;
+}
+#imgfalse{
+  display:none;
+}
+
+
+@media only screen and (min-width: 750px) {
+  .about_par > p{
+    margin: 2vw;
+    font-size: 1.5vw;
+  }
+  .about_par > img{
+    width: 40vw;
+  }
+  .Main_Canvas_btn > button, .Main_Canvas_btn_clr > button{
+    font-size: 1.7vh;
+    background-color: lightgrey;
+    color: white;
+    height: 4vh;
+    width: 10vw;
+    border: none;
+    border-radius: 7px;
+    margin-left: 0vw;
+    margin-right: 1vw;
+  
+  }
+.Main_Canvas > canvas  {
+  background-color: black;
+  border: solid;
+border-color: lightgrey;
+border-width: 3px;
+width: 37vw !important;
+height: 37vw !important;
+}
+.Main_Canvas_bar > canvas{
+  height: 37vw !important;
+  width:  60vw !important;
+}
+.Main_Canvas_btn{
+
+  width: 34vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 1vw;
+
+}
+.about_par{
+  display: flex;
+  align-items: center;
+  margin-top: 10vh;
+  margin: 5vw;
+}
+}
+.App_Header{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgrey;
   color: white;
+  align-items: center;
+}
+.App_About{
+  margin-top: 10vh;
+}
+.App_About > h2{
+  margin-top: 10vh;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.seperator{
+  
+  height: 2vh;
+  width: 100vw;
+  background-color: lightgray;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
